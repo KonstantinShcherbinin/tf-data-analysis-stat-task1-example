@@ -13,4 +13,7 @@ def solution(x: np.array) -> float:
     for i in range(len(x) - 1):
         acceleration.append((x[i + 1] - x[i] + error*2)/10)
 
-    return np.mean(acceleration) # Ваш ответ
+    return 1/np.mean(acceleration) # Ваш ответ
+
+#if __name__ == '__main__':
+#    print(solution(np.array([45, 56, 76, 88, 67])))
