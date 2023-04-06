@@ -8,7 +8,7 @@ def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    error = -32
+    error = -31.282
     acceleration = []
     for i in range(len(x) - 1):
         acceleration.append((x[i + 1] - x[i])/10 + (2 / error))
